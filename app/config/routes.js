@@ -1,9 +1,5 @@
 const React = require('react')
-const ReactRouter = require('react-router')
-const Router = ReactRouter.Router
-const Route = ReactRouter.Route
-const hashHistory = ReactRouter.hashHistory
-const IndexRoute = ReactRouter.IndexRoute
+import { Router, Route, hashHistory, IndexRoute } from 'react-router'
 const Main = require('../components/Main')
 const Home = require("../components/Home")
 const PromptContainer = require('../containers/PromptContainer')

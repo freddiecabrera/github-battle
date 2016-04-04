@@ -1,5 +1,5 @@
 import React from 'react'
-const ReactRouter = require('react-router')
+import ReactRouter from 'react-router'
 import Prompt from '../components/Prompt'
 
 const PromptContainer = React.createClass({

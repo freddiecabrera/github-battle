@@ -1,15 +1,15 @@
 import React from'react'
-const ReactRouter = require('react-router')
-const Link = ReactRouter.Link
+import { Link } from 'react-router'
+import { centered } from '../styles/index.js'
 
 const Home = React.createClass({
   render () {
     return (
-      <div className='col s12' style={{textAlign: 'center'}}>
-        <h1>Github Battle</h1>
-        <p>Some fancy motto</p>
+      <div className='col s12' style={centered}>
+        <h1>Github Brawl</h1>
+        <p>See who is the top Gethub dog</p>
         <Link to='/playerOne'>
-          <button type='button' className="waves-effect waves-light btn">Get Started</button>
+          <button type='button' className="waves-effect waves-light btn pink accent-3"><i className="material-icons left">play_circle_outline</i> Get started</button>
         </Link>
       </div>
     )

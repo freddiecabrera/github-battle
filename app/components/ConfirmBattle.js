@@ -1,17 +1,19 @@
 import React from 'react'
 import { Link } from 'react-router'
-import { centerText, btnMargin } from '../styles'
+import { centerText, btnMargin, centered } from '../styles'
 import UserDetails from './UserDetails'
 import UserDetailsWrapper from './UserDetailsWrapper'
 const PropTypes = React.PropTypes
 
 const ConfirmBattle = (props) => {
   return props.isLoading === true
-    ? <p> Loading</p>
+    ? <div className="progress" style={centered}>
+        <div className="indeterminate"></div>
+      </div>
     : <div className='container'>
         <div calssName='row'>
           <div className='col s12' style={centerText}>
-            <h1>Confirm Players</h1>
+            <h4>Confirm Players</h4>
             <div className='row'>
               <div className='col s12'>
                 <UserDetailsWrapper header='Player One'>
@@ -23,9 +25,9 @@ const ConfirmBattle = (props) => {
               </div>
             </div>
             <div className='col s12'>
-              <button className="waves-effect waves-light btn" onClick={props.onInitiateBattle} style={btnMargin}>Initiate Battle</button>
+              <button className="waves-effect waves-light btn pink accent-3" onClick={props.onInitiateBattle} style={btnMargin}>Initiate Battle</button>
               <Link to='/playerOne'>
-                <button type='button' className="waves-effect waves-light btn" style={btnMargin}>Reselect Players</button>
+                <button type='button' className="waves-effect waves-light btn yellow darken-1" style={btnMargin}>Reselect Players</button>
               </Link>
             </div>
           </div>
