@@ -3,6 +3,7 @@ import { Link } from 'react-router'
 import { centerText, btnMargin, centered } from '../styles'
 import UserDetails from './UserDetails'
 import UserDetailsWrapper from './UserDetailsWrapper'
+import Loading from './Loading'
 const PropTypes = React.PropTypes
 
 const ConfirmBattle = (props) => {
